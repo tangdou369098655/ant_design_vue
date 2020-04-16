@@ -18,7 +18,8 @@
                 暗色菜单风格
               </template>
               <div class="setting-drawer-index-item" @click="handleMenuTheme('dark')">
-                <img src="https://gw.alipayobjects.com/zos/rmsportal/LCkqqYNmvBEbokSDscrm.svg" alt="dark">
+                <img src="" alt="dark">
+                <!-- <img src="https://gw.alipayobjects.com/zos/rmsportal/LCkqqYNmvBEbokSDscrm.svg" alt="dark"> -->
                 <div class="setting-drawer-index-selectIcon" v-if="navTheme === 'dark'">
                   <a-icon type="check"/>
                 </div>
@@ -30,7 +31,7 @@
                 亮色菜单风格
               </template>
               <div class="setting-drawer-index-item" @click="handleMenuTheme('light')">
-                <img src="https://gw.alipayobjects.com/zos/rmsportal/jpRkZQMyYRryryPNtyIC.svg" alt="light">
+                <img src="" alt="light">
                 <div class="setting-drawer-index-selectIcon" v-if="navTheme !== 'dark'">
                   <a-icon type="check"/>
                 </div>
@@ -65,7 +66,7 @@
                 侧边栏导航
               </template>
               <div class="setting-drawer-index-item" @click="handleLayout('sidemenu')">
-                <img src="https://gw.alipayobjects.com/zos/rmsportal/JopDzEhOqwOjeNTXkoje.svg" alt="sidemenu">
+                <img src="" alt="sidemenu">
                 <div class="setting-drawer-index-selectIcon" v-if="layoutMode === 'sidemenu'">
                   <a-icon type="check"/>
                 </div>
@@ -77,7 +78,7 @@
                 顶部栏导航
               </template>
               <div class="setting-drawer-index-item" @click="handleLayout('topmenu')">
-                <img src="https://gw.alipayobjects.com/zos/rmsportal/KDNDBbriJhLwuqMoxcAr.svg" alt="topmenu">
+                <img src="" alt="topmenu">
                 <div class="setting-drawer-index-selectIcon" v-if="layoutMode !== 'sidemenu'">
                   <a-icon type="check"/>
                 </div>

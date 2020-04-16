@@ -323,25 +323,92 @@ export const asyncRouterMap = [
           }
         ]
       },
+
       // new path
       {
-        path: '/particle',
+        path: '/Particle',
         name: 'particlePage',
         component: RouteView,
-        meta: { title: '测试页面组件', icon: 'slack', permission: [ 'dashboard' ] },
+        meta: { title: '粒子组件', icon: 'slack', permission: [ 'dashboard' ] },
         redirect: '/particle/list',
         children: [
           {
-            path: '/particle/list',
+            path: '/Particle/List',
             name: 'particlePage',
             component: () => import('@/views/particle-monitoring/ParticleList'),
-            meta: { title: '测试页面组件頁', icon: 'tool', keepAlive: true, permission: [ 'dashboard' ] }
+            meta: { title: '粒子组件頁', icon: 'tool', keepAlive: true, permission: [ 'dashboard' ] }
+          },
+          // {
+          //   path: '/Particle/Test',
+          //   name: 'particleTest',
+          //   component: () => import('@/views/particle-monitoring/ParticleTest'),
+          //   meta: { title: '粒子測試頁', icon: 'tool', keepAlive: true, permission: [ 'dashboard' ] }
+          // },
+          {
+            path: '/particle/TestOne',
+            name: 'particleTestOne',
+            component: () => import('@/views/particle-monitoring/TestOne'),
+            meta: { title: '測試頁1', icon: 'tool', keepAlive: true, permission: [ 'dashboard' ] }
           },
           {
-            path: '/particle/testone',
-            name: 'particletestone',
-            component: () => import('@/views/particle-monitoring/Testone'),
-            meta: { title: '测试页面组件頁', icon: 'tool', keepAlive: true, permission: [ 'dashboard' ] }
+            path: '/particle/TestTwo',
+            name: 'particleTestTwo',
+            component: () => import('@/views/particle-monitoring/TestTwo'),
+            meta: { title: '測試頁2', icon: 'tool', keepAlive: true, permission: [ 'dashboard' ] }
+          },
+          {
+            path: '/particle/TestThree',
+            name: 'particleTestThree',
+            component: () => import('@/views/particle-monitoring/TestThree'),
+            meta: { title: '測試頁3', icon: 'tool', keepAlive: true, permission: [ 'dashboard' ] }
+          },
+          {
+            path: '/particle/TestFour',
+            name: 'particleTestFour',
+            component: () => import('@/views/particle-monitoring/TestFour'),
+            meta: { title: '測試頁4', icon: 'tool', keepAlive: true, permission: [ 'dashboard' ] }
+          },
+          {
+            path: '/particle/TestFive',
+            name: 'particleTestFive',
+            component: () => import('@/views/particle-monitoring/TestFive'),
+            meta: { title: '測試頁5', icon: 'tool', keepAlive: true, permission: [ 'dashboard' ] }
+          },
+          {
+            path: '/particle/TestSix',
+            name: 'particleTestSix',
+            component: () => import('@/views/particle-monitoring/TestSix'),
+            meta: { title: '組件測試頁', icon: 'tool', keepAlive: true, permission: [ 'dashboard' ] }
+          },
+          {
+            path: '/particle/TestSeven',
+            name: 'particleTestSeven',
+            component: () => import('@/views/particle-monitoring/TestSeven'),
+            meta: { title: '圖表測試頁7', icon: 'tool', keepAlive: true, permission: [ 'dashboard' ] }
+          },
+          {
+            path: '/particle/TestEight',
+            name: 'particleTestEight',
+            component: () => import('@/views/particle-monitoring/TestEight'),
+            meta: { title: '表格測試頁8', icon: 'tool', keepAlive: true, permission: [ 'dashboard' ] }
+          },
+          {
+            path: '/particle/Faaa',
+            name: 'particleFaaa',
+            component: () => import('@/views/particle-monitoring/Faaa'),
+            meta: { title: '表格faaa', icon: 'tool', keepAlive: true, permission: [ 'dashboard' ] }
+          },
+          {
+            path: '/particle/LineChart',
+            name: 'particleLineChart',
+            component: () => import('@/views/particle-monitoring/LineChart'),
+            meta: { title: '折線圖', icon: 'tool', keepAlive: true, permission: [ 'dashboard' ] }
+          },
+          {
+            path: '/particle/InformationMaintenance',
+            name: 'particleInformationMaintenance',
+            component: () => import('@/views/particle-monitoring/InformationMaintenance'),
+            meta: { title: '設備信息維護', icon: 'tool', keepAlive: true, permission: [ 'dashboard' ] }
           }
         ]
       }
@@ -403,5 +470,20 @@ export const constantRouterMap = [
     path: '/404',
     component: () => import(/* webpackChunkName: "fail" */ '@/views/exception/404')
   }
+  // 寫到這裡的話，就是整個頁面覆蓋掉原有的頁面了，沒有左側列表哦
+  // ,
+
+  // {
+  //   path: '/particle',
+  //   component: BlankLayout,
+  //   redirect: '/particle/list',
+  //   children: [
+  //     {
+  //       path: 'list',
+  //       name: 'particlePage',
+  //       component: () => import('@/views/particle-monitoring/particleList')
+  //     }
+  //   ]
+  // }
 
 ]
